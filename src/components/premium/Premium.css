@@ -1,0 +1,157 @@
+.premium {
+  padding: 3rem 0;
+  background: transparent;
+}
+
+.premium .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.premium h3 {
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.premium .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.premium .plan {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 2rem 1.1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 0.2s ease;
+}
+
+.premium .plan:hover {
+  background: rgba(255, 255, 255, 0.116);
+}
+
+.premium .plan.featured {
+  background: #ffffff;
+  color: #0f172a;
+  border: 2px solid #1db954;
+}
+
+.premium .plan.featured:hover {
+  background: #ffffff;
+}
+
+.premium .plan.featured .price span {
+  color: #6b7280;
+}
+
+.premium .plan.featured ul {
+  color: #475569;
+}
+
+.premium .plan-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.premium .plan h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.premium .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.premium .price span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.premium ul {
+  text-align: left;
+  padding-left: 1rem;
+  margin: 0.9rem 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.premium .cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  background: #1db954;
+  color: #061215;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .premium {
+    padding: 2rem 0;
+  }
+
+  .premium .inner {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .premium h3 {
+    font-size: 1.3rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .premium .plans {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .premium .plan {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .premium .inner {
+    padding: 0 1rem;
+  }
+
+  .premium h3 {
+    font-size: 1.15rem;
+  }
+
+  .premium .plan {
+    padding: 1.25rem 0.875rem;
+  }
+
+  .premium .plan h4 {
+    font-size: 1rem;
+  }
+
+  .premium .price {
+    font-size: 1.4rem;
+  }
+
+  .premium .price span {
+    font-size: 0.8rem;
+  }
+
+  .premium ul {
+    font-size: 0.9rem;
+  }
+
+  .premium .cta {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
